@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 3,
+			"revision" : 1,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 850.0, 305.0, 1374.0, 845.0 ],
+		"rect" : [ 85.0, 79.0, 1374.0, 845.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,57 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-51",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 656.5, 189.0, 150.0, 33.0 ],
+					"style" : "",
+					"text" : "2h30 angry during 5 minutes"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-50",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 656.5, 147.0, 150.0, 33.0 ],
+					"style" : "",
+					"text" : "second hour: cool but more perturbations"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-48",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 656.5, 86.0, 150.0, 47.0 ],
+					"style" : "",
+					"text" : "first hour is random\n\nafter 45 minutes: angry"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 656.5, 45.0, 150.0, 20.0 ],
+					"style" : "",
+					"text" : "start"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-60",
 					"maxclass" : "newobj",
@@ -70,19 +121,6 @@
 					"patching_rect" : [ 689.5, 742.0, 105.0, 22.0 ],
 					"style" : "",
 					"text" : "envfollower 5. 15."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-56",
-					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 347.0, 758.0, 91.0, 22.0 ],
-					"style" : "",
-					"text" : "thresh~ 0. 0.65"
 				}
 
 			}
@@ -216,19 +254,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-15",
-					"maxclass" : "newobj",
-					"numinlets" : 4,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 725.0, 172.0, 50.5, 22.0 ],
-					"style" : "",
-					"text" : "tempo"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"clipheight" : 85.0,
 					"data" : 					{
 						"clips" : [ 							{
@@ -237,21 +262,21 @@
 								"selection" : [ 0.485961, 0.349892 ],
 								"loop" : 0,
 								"content_state" : 								{
-									"play" : [ 0 ],
-									"basictuning" : [ 440 ],
-									"mode" : [ "basic" ],
-									"pitchcorrection" : [ 0 ],
-									"followglobaltempo" : [ 0 ],
 									"timestretch" : [ 0 ],
-									"pitchshift" : [ 1.0 ],
-									"quality" : [ "basic" ],
-									"formantcorrection" : [ 0 ],
-									"formant" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"speed" : [ 1.0 ],
 									"originallengthms" : [ 0.0 ],
+									"pitchshift" : [ 1.0 ],
 									"slurtime" : [ 0.0 ],
-									"originaltempo" : [ 120.0 ]
+									"mode" : [ "basic" ],
+									"basictuning" : [ 440 ],
+									"formantcorrection" : [ 0 ],
+									"speed" : [ 1.0 ],
+									"originaltempo" : [ 120.0 ],
+									"quality" : [ "basic" ],
+									"pitchcorrection" : [ 0 ],
+									"formant" : [ 1.0 ],
+									"followglobaltempo" : [ 0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"play" : [ 0 ]
 								}
 
 							}
@@ -871,7 +896,6 @@
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"order" : 0,
 					"source" : [ "obj-28", 0 ]
 				}
 
@@ -881,7 +905,6 @@
 					"destination" : [ "obj-29", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"order" : 1,
 					"source" : [ "obj-28", 0 ]
 				}
 
@@ -891,7 +914,6 @@
 					"destination" : [ "obj-33", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"order" : 1,
 					"source" : [ "obj-29", 0 ]
 				}
 
@@ -901,7 +923,6 @@
 					"destination" : [ "obj-46", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"order" : 0,
 					"source" : [ "obj-29", 0 ]
 				}
 
@@ -920,7 +941,6 @@
 					"destination" : [ "obj-25", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"order" : 2,
 					"source" : [ "obj-30", 0 ]
 				}
 
@@ -930,17 +950,6 @@
 					"destination" : [ "obj-34", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"order" : 0,
-					"source" : [ "obj-30", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-56", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"order" : 3,
 					"source" : [ "obj-30", 0 ]
 				}
 
@@ -950,7 +959,6 @@
 					"destination" : [ "obj-58", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"order" : 1,
 					"source" : [ "obj-30", 0 ]
 				}
 
@@ -960,7 +968,6 @@
 					"destination" : [ "obj-25", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"order" : 2,
 					"source" : [ "obj-32", 0 ]
 				}
 
@@ -970,7 +977,6 @@
 					"destination" : [ "obj-34", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"order" : 0,
 					"source" : [ "obj-32", 0 ]
 				}
 
@@ -980,7 +986,6 @@
 					"destination" : [ "obj-58", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"order" : 1,
 					"source" : [ "obj-32", 0 ]
 				}
 
@@ -1008,7 +1013,6 @@
 					"destination" : [ "obj-36", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"order" : 0,
 					"source" : [ "obj-39", 0 ]
 				}
 
@@ -1018,7 +1022,6 @@
 					"destination" : [ "obj-37", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"order" : 1,
 					"source" : [ "obj-39", 2 ]
 				}
 
@@ -1028,7 +1031,6 @@
 					"destination" : [ "obj-38", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"order" : 1,
 					"source" : [ "obj-39", 1 ]
 				}
 
@@ -1038,7 +1040,6 @@
 					"destination" : [ "obj-43", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"order" : 1,
 					"source" : [ "obj-39", 0 ]
 				}
 
@@ -1048,7 +1049,6 @@
 					"destination" : [ "obj-44", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"order" : 0,
 					"source" : [ "obj-39", 1 ]
 				}
 
@@ -1058,7 +1058,6 @@
 					"destination" : [ "obj-45", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"order" : 0,
 					"source" : [ "obj-39", 2 ]
 				}
 
@@ -1122,7 +1121,6 @@
 					"destination" : [ "obj-59", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"order" : 0,
 					"source" : [ "obj-58", 0 ]
 				}
 
@@ -1132,7 +1130,6 @@
 					"destination" : [ "obj-60", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"order" : 1,
 					"source" : [ "obj-58", 0 ]
 				}
 
@@ -1151,7 +1148,6 @@
 					"destination" : [ "obj-18", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"order" : 1,
 					"source" : [ "obj-9", 1 ]
 				}
 
@@ -1161,7 +1157,6 @@
 					"destination" : [ "obj-18", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"order" : 1,
 					"source" : [ "obj-9", 0 ]
 				}
 
@@ -1171,7 +1166,6 @@
 					"destination" : [ "obj-26", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"order" : 0,
 					"source" : [ "obj-9", 0 ]
 				}
 
@@ -1181,7 +1175,6 @@
 					"destination" : [ "obj-27", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"order" : 0,
 					"source" : [ "obj-9", 1 ]
 				}
 
@@ -1192,14 +1185,8 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "hawaii.wav",
-				"bootpath" : "~/Music/Ableton/ProjetsLive/MaxPatches/ClocksTimers/samples",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "envfollower.maxpat",
-				"bootpath" : "~/Music/Ableton/ProjetsLive/MaxPatches/ClocksTimers",
+				"bootpath" : "~/Documents/maxmsp_patches/GitHubPatches/timers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
